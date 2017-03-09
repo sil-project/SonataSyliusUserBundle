@@ -5,6 +5,7 @@
     "require": {
         "php": "^5.6|^7.0",
         "symfony/symfony": "2.8.*",
+        "blast-project/core-bundle": "dev-master"
     },
     "license": "GPL-3.0",
     "keywords": [
