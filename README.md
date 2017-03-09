@@ -10,13 +10,13 @@ Use the following command to add the bundle to your `composer.json` and download
 If you have [Composer installed globally](http://getcomposer.org/doc/00-intro.md#globally)
 
 ```bash
-$ composer require sylius/user-bundle
+$ composer require libre-informatique/sonata-sylius-user-bundle
 ```
 Otherwise you have to download .phar file.
 
 ```bash
 $ curl -sS https://getcomposer.org/installer | php
-$ php composer.phar require sylius/user-bundle
+$ php composer.phar require libre-informatique/sonata-sylius-user-bundle
 ```
 
 ### Adding required bundles to the kernel
@@ -48,38 +48,40 @@ public function registerBundles()
 
         // OTHER BUNDLES...
         new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
+        // [...]
+
+        // SONATA SYLIUS USER BUNDLE
+        new Librinfo\SonataSyliusUserBundle\SonataSyliusUserBundle(),
     );
 }
 ```
 
-.. note::
-
-    Please register the bundle before *DoctrineBundle*. This is important as we use listeners which have to be processed first.
+Note:
+Please register `SyliusUserBundle` before `DoctrineBundle`. This is important as it uses listeners which have to be processed first.
 
 Configure Doctrine extensions
 -----------------------------
 
 Configure doctrine extensions which are used by the bundle.
 
-.. code-block:: yaml
-
-    # app/config/config.yml
-    stof_doctrine_extensions:
-        orm:
-            default:
-                timestampable: true
+```yaml
+# app/config/config.yml
+stof_doctrine_extensions:
+    orm:
+        default:
+            timestampable: true
+```
 
 Updating database schema
 ------------------------
 
 Run the following command.
 
-.. code-block:: bash
+```bash
+$ php bin/console doctrine:schema:update --force
+```
 
-    $ php bin/console doctrine:schema:update --force
+Warning:
+This should be done only in **dev** environment! We recommend using Doctrine migrations, to safely update your schema.
 
-.. warning::
-
-    This should be done only in **dev** environment! We recommend using Doctrine migrations, to safely update your schema.
-
-Congratulations! The bundle is now installed and ready to use.
+Congratulations! The bundle is now installed and ready to use. :boom:
