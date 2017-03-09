@@ -1,0 +1,160 @@
+<?php
+
+/*
+ * This file is part of the BLAST package <http://blast.libre-informatique.fr>.
+ *
+ * Copyright (C) 2015-2016 Libre Informatique
+ *
+ * This file is licenced under the GNU GPL v3.
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace AppBundle\Entity;
+
+use Librinfo\DoctrineBundle\Entity\Traits\BaseEntity;
+
+class Packaging
+{
+    use BaseEntity;
+
+    /**
+     * @var string
+     */
+    private $code;
+
+    /**
+     * @var boolean
+     */
+    private $bulk;
+
+    /**
+     * @var integer
+     */
+    private $weight;
+
+    /**
+     * @var integer
+     */
+    private $seeds;
+
+    /**
+     * @var float
+     */
+    private $loss;
+
+    /**
+     * Set code
+     *
+     * @param string $code
+     * @return VarietyPackaging
+     */
+    public function setCode($code)
+    {
+        $this->code = $code;
+
+        return $this;
+    }
+
+    /**
+     * Get code
+     *
+     * @return string
+     */
+    public function getCode()
+    {
+        return $this->code;
+    }
+
+    /**
+     * Set bulk
+     *
+     * @param boolean $bulk
+     * @return VarietyPackaging
+     */
+    public function setBulk($bulk)
+    {
+        $this->bulk = $bulk;
+
+        return $this;
+    }
+
+    /**
+     * Get bulk
+     *
+     * @return boolean
+     */
+    public function getBulk()
+    {
+        return $this->bulk;
+    }
+
+    /**
+     * Set weight
+     *
+     * @param integer $weight
+     * @return VarietyPackaging
+     */
+    public function setWeight($weight)
+    {
+        $this->weight = $weight;
+
+        return $this;
+    }
+
+    /**
+     * Get weight
+     *
+     * @return integer
+     */
+    public function getWeight()
+    {
+        return $this->weight;
+    }
+
+    /**
+     * Set seeds
+     *
+     * @param integer $seeds
+     * @return VarietyPackaging
+     */
+    public function setSeeds($seeds)
+    {
+        $this->seeds = $seeds;
+
+        return $this;
+    }
+
+    /**
+     * Get seeds
+     *
+     * @return integer
+     */
+    public function getSeeds()
+    {
+        return $this->seeds;
+    }
+
+    /**
+     * Set loss
+     *
+     * @param float $loss
+     * @return VarietyPackaging
+     */
+    public function setLoss($loss)
+    {
+        $this->loss = $loss;
+
+        return $this;
+    }
+
+    /**
+     * Get loss
+     *
+     * @return float
+     */
+    public function getLoss()
+    {
+        return $this->loss;
+    }
+}

@@ -1,2 +1,18 @@
-services: ~
+# Copyright (C) Paweł Jędrzejewski
+# Copyright (C) 2015-2016 Libre Informatique
+#
+# This file is licenced under the GNU GPL v3.
+# For the full copyright and license information, please view the LICENSE
+# file that was distributed with this source code.
 
+services:
+
+### EVENT LISTENERS ###
+
+    librinfo.listener.canonicalizer:
+        class: Librinfo\SonataSyliusUserBundle\EventListener\CanonicalizerListener
+        arguments:
+            - "@sylius.canonicalizer"
+        tags:
+            - { name: doctrine.event_listener, event: prePersist }
+            - { name: doctrine.event_listener, event: preUpdate }
