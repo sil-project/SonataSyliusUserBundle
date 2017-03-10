@@ -7,7 +7,7 @@
         "php": "^5.6|^7.0",
         "symfony/symfony": "3.2.*",
         "sylius/user-bundle": "^1.0",
-        "blast-project/core-bundle": "dev-sf3.2"
+        "blast-project/base-entities-bundle": "dev-sf3.2"
     },
     "license": "GPL-3.0",
     "keywords": [
