@@ -1,0 +1,90 @@
+parameters:
+    blast:
+        Librinfo\SonataSyliusUserBundle\Entity\SonataUser:
+            Sonata\AdminBundle\Datagrid\ListMapper:
+                remove:
+                    id: ~
+                    salt: ~
+                    confirmationToken: ~
+                    passwordRequestedAt: ~
+                    credentialsExpired: ~
+                    credentialsExpireAt: ~
+                    expiresAt: ~
+                add:
+                    name: ~
+                    firstname: ~
+                    username: ~
+                    _options:
+                        fieldsOrder: [username, name, firstname]
+            Sonata\AdminBundle\Datagrid\DatagridMapper:
+                _copy: Sonata\AdminBundle\Datagrid\ListMapper
+            Sonata\AdminBundle\Form\FormMapper:
+                add:
+                    form_group_general:
+                        '':
+                            username: ~
+                            name: ~
+                            firstname: ~
+                            email: ~
+                        form_group_details:
+                            enabled: ~
+                            locked: ~
+                            expired: ~
+                            expiresAt:
+                                type: sonata_type_date_picker
+                    form_group_security:
+                        form_group_password:
+                            plainPassword:
+                                type: repeated
+                                required: false
+                        form_group_roles:
+                            roles: ~
+            Sonata\AdminBundle\Show\ShowMapper:
+                _copy: Sonata\AdminBundle\Form\FormMapper
+
+        Librinfo\SonataSyliusBundle\Entity\SonataGroup:
+            Sonata\AdminBundle\Datagrid\ListMapper:
+                add:
+                    name: ~
+                    roles: ~
+            Sonata\AdminBundle\Form\FormMapper:
+                add:
+                    name: ~
+                    roles: ~
+            Sonata\AdminBundle\Show\ShowMapper:
+                _copy: Sonata\AdminBundle\Form\FormMapper
+
+        Librinfo\SonataSyliusUserBundle\Entity\Traits\Traceable:
+            Sonata\AdminBundle\Show\ShowMapper:
+                add:
+                    form_tab_history:
+                        form_group_history:
+                            createdBy: ~
+                            updatedBy: ~
+            Sonata\AdminBundle\Form\FormMapper:
+                add:
+                    form_tab_history:
+                        form_group_history:
+                            createdBy:
+                                type: entity
+                                class: Librinfo\SonataSyliusUserBundle\Entity\SonataUser
+                                disabled: true
+                                required: false
+                            updatedBy:
+                                type: entity
+                                class: Librinfo\SonataSyliusUserBundle\Entity\SonataUser
+                                disabled: true
+                                required: false
+
+        Librinfo\SonataSyliusUserBundle\Entity\Traits\Ownable:
+            Sonata\AdminBundle\Datagrid\DatagridMapper:
+                add:
+                    owner: ~
+            Sonata\AdminBundle\Form\FormMapper:
+                add:
+                    form_group_specifics:
+                        form_group_misc:
+                            owner:
+                                type: entity
+                                class: Librinfo\SonataSyliusUserBundle\Entity\SonataUser
+                                required: false

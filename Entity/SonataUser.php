@@ -50,6 +50,24 @@ class SonataUser extends User implements SonataUserInterface
     }
 
     /**
+     * @return string
+     */
+    public function __toString()
+    {
+        $names = [];
+        if ($this->getFirstName())
+            $names[] = $this->getFirstName();
+        if ($this->getLastName())
+            $names[] = $this->getLastName();
+        if ($names)
+            return implode(' ', $names);
+        elseif ($this->getUsername())
+            return (string) $this->getUsername();
+        else
+            return (string) $this->getEmail();
+    }
+
+    /**
      * {@inheritdoc}
      */
     public function getFirstName()
