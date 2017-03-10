@@ -19,6 +19,7 @@ use Sylius\Component\User\Model\UserInterface as BaseUserInterface;
  */
 interface SonataUserInterface extends BaseUserInterface
 {
+    const ROLE_DEFAULT = 'ROLE_USER';
     const DEFAULT_ADMIN_ROLE = 'ROLE_SONATA_ADMIN';
 
     /**
