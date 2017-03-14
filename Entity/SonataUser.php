@@ -184,10 +184,10 @@ class SonataUser extends User implements SonataUserInterface
     }
 
     /**
-     * @param GroupInterface $group
+     * @param SonataGroupInterface $group
      * @return self
      */
-    public function addGroup(GroupInterface $group)
+    public function addGroup(SonataGroupInterface $group)
     {
         if (!$this->getGroups()->contains($group)) {
             $this->getGroups()->add($group);
@@ -197,10 +197,10 @@ class SonataUser extends User implements SonataUserInterface
     }
 
     /**
-     * @param GroupInterface $group
+     * @param SonataGroupInterface $group
      * @return self
      */
-    public function removeGroup(GroupInterface $group)
+    public function removeGroup(SonataGroupInterface $group)
     {
         if ($this->getGroups()->contains($group)) {
             $this->getGroups()->removeElement($group);
