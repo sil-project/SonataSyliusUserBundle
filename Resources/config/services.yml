@@ -28,7 +28,7 @@ services:
         calls:
             - [setLogger,['@logger']]
             - [setTokenStorage, ['@security.token_storage']]
-            - [setUserClass, [%sonata_sylius_user.user.class%]]
+            - [setUserClass, ['%sonata_sylius_user.user.class%']]
             - [setClassAnalyser, [Blast\CoreBundle\Tools\Reflection\ClassAnalyzer]]
 
     # Ownable Doctrine mapping
@@ -39,7 +39,7 @@ services:
         calls:
             - [setLogger,['@logger']]
             - [setTokenStorage, ['@security.token_storage']]
-            - [setUserClass, [%sonata_sylius_user.user.class%]]
+            - [setUserClass, ['%sonata_sylius_user.user.class%']]
             - [setClassAnalyser, [Blast\CoreBundle\Tools\Reflection\ClassAnalyzer]]
 
     # Set GUID primary keys for Sylius entities (and child classes)
