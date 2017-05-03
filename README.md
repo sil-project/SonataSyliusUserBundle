@@ -1,5 +1,8 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:0 orderedList:0 -->
 
+[![Travis](https://img.shields.io/travis/libre-informatique/SonataSyliusUserBundle.svg?style=flat-square)][travis]
+[![Coveralls](https://img.shields.io/coveralls/libre-informatique/SonataSyliusUserBundle.svg?style=flat-square)][coveralls]
+
 - [Sonata Sylius User Bundle](#sonata-sylius-user-bundle)
 	- [Installation](#installation)
 		- [Adding required bundles to the kernel](#adding-required-bundles-to-the-kernel)
@@ -177,3 +180,8 @@ imports:
 ```
 
 If you want to use your own configuration for SyliusUserBundle (classes, repositoties, templates, etc), then you will have to adapt this config.yml to your needs instead of importing it.
+
+
+[travis]: https://travis-ci.org/libre-informatique/SonataSyliusUserBundle
+[coveralls]: https://coveralls.io/github/libre-informatique/SonataSyliusUserBundle?branch=master
+
