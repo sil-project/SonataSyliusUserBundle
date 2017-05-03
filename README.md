@@ -1,8 +1,10 @@
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:0 orderedList:0 -->
+# Sonata Sylius User Bundle
 
 [![Travis](https://img.shields.io/travis/libre-informatique/SonataSyliusUserBundle.svg?style=flat-square)][travis]
 [![Coveralls](https://img.shields.io/coveralls/libre-informatique/SonataSyliusUserBundle.svg?style=flat-square)][coveralls]
 [![License](https://img.shields.io/github/license/libre-informatique/SonataSyliusUserBundle.svg?style=flat-square)][license]
+
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:0 orderedList:0 -->
 
 - [Sonata Sylius User Bundle](#sonata-sylius-user-bundle)
 	- [Installation](#installation)
@@ -14,7 +16,6 @@
 
 <!-- /TOC -->
 
-# Sonata Sylius User Bundle
 
 This is a Symfony bundle providing a bridge between [SonataAdmin](https://github.com/sonata-project/SonataAdminBundle)
  and [SyliusUser](http://docs.sylius.org/en/latest/bundles/SyliusUserBundle/index.html)
