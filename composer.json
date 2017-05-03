@@ -9,6 +9,14 @@
         "sylius/user-bundle": "^1.0",
         "blast-project/base-entities-bundle": "dev-master"
     },
+    "config": {
+        "sllh-composer-lint": {
+            "php": true,
+            "type": true,
+            "minimum-stability": false,
+            "version-constraints": false
+        }
+    },
     "require-dev": {
 	"symfony/phpunit-bridge": "^2.7 || ^3.0"
     },
