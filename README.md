@@ -2,7 +2,7 @@
 
 [![Travis](https://img.shields.io/travis/libre-informatique/SonataSyliusUserBundle.svg?style=flat-square)][travis]
 [![Coveralls](https://img.shields.io/coveralls/libre-informatique/SonataSyliusUserBundle.svg?style=flat-square)][coveralls]
-[![License](https://img.shields.io/github/license/blast-project/SonataSyliusUserBundle.svg?style=flat-square)][license]
+[![License](https://img.shields.io/github/license/libre-informatique/SonataSyliusUserBundle.svg?style=flat-square)][license]
 
 - [Sonata Sylius User Bundle](#sonata-sylius-user-bundle)
 	- [Installation](#installation)
