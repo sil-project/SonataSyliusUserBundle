@@ -12,6 +12,14 @@
     "require-dev": {
 	"symfony/phpunit-bridge": "3.2.*"
     },
+    "config": {
+        "sllh-composer-lint": {
+            "php": true,
+            "type": true,
+            "minimum-stability": false,
+            "version-constraints": true
+        }
+    },
     "license": "GPL-3.0",
     "keywords": [
         "symfony",
