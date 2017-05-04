@@ -2,6 +2,7 @@
     "name": "libre-informatique/sonata-sylius-user-bundle",
     "type": "symfony-bundle",
     "description": "Symfony bundle providing a bridge between SonataAdmin and SyliusUser (an alternative to SonataUserBundle)",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.6",
         "symfony/symfony": "3.2.*",
