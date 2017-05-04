@@ -4,6 +4,10 @@
 [![Coveralls](https://img.shields.io/coveralls/libre-informatique/SonataSyliusUserBundle.svg?style=flat-square)][coveralls]
 [![License](https://img.shields.io/github/license/libre-informatique/SonataSyliusUserBundle.svg?style=flat-square)][license]
 
+[![Latest Stable Version](https://poser.pugx.org/libre-informatique/sonata-sylius-user-bundle/v/stable)](https://packagist.org/packages/libre-informatique/sonata-sylius-user-bundle)
+[![Latest Unstable Version](https://poser.pugx.org/libre-informatique/sonata-sylius-user-bundle/v/unstable)](https://packagist.org/packages/libre-informatique/sonata-sylius-user-bundle)
+[![Total Downloads](https://poser.pugx.org/libre-informatique/sonata-sylius-user-bundle/downloads)](https://packagist.org/packages/libre-informatique/sonata-sylius-user-bundle)
+
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:0 orderedList:0 -->
 
 - [Sonata Sylius User Bundle](#sonata-sylius-user-bundle)
