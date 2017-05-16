@@ -43,7 +43,7 @@ class CreateUserCommandTest extends TestCase
         $this->myCommand->configure();
 
         $this->myConfig = $this->myCommand->getName();
-        /*
+        /**
          * @todo : check if we need to test more (or not)
          */
         $this->assertContains('user', $this->myConfig);
@@ -56,4 +56,4 @@ class CreateUserCommandTest extends TestCase
          */
     }
 
-    }
+}
