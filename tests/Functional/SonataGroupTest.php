@@ -9,7 +9,8 @@ use Symfony\Component\Security\Core\User\AdvancedUserInterface;
  */
 use PHPUnit\Framework\TestCase;
 
-class SonataGroupTest extends TestCase {
+class SonataGroupTest extends TestCase
+    {
 
     /**
      * @var SonataGroup
@@ -38,9 +39,7 @@ class SonataGroupTest extends TestCase {
      */
     public function test__toString() {
         // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-                'This test has not been implemented yet.'
-        );
+        $this->markTestIncomplete('This test has not been implemented yet.');
     }
 
     /**
@@ -69,10 +68,8 @@ class SonataGroupTest extends TestCase {
      * @todo   Implement testGetId().
      */
     public function testGetId() {
-        // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-                'This test has not been implemented yet.'
-        );
+        // Remove the following lines when you implement this test. 
+        $this->markTestIncomplete('This test has not been implemented yet.');
     }
 
     /**
@@ -81,9 +78,7 @@ class SonataGroupTest extends TestCase {
      */
     public function testGetName() {
         // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-                'This test has not been implemented yet.'
-        );
+        $this->markTestIncomplete('This test has not been implemented yet.');
     }
 
     /**
@@ -92,9 +87,7 @@ class SonataGroupTest extends TestCase {
      */
     public function testHasRole() {
         // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-                'This test has not been implemented yet.'
-        );
+        $this->markTestIncomplete('This test has not been implemented yet.');
     }
 
     /**
@@ -103,9 +96,7 @@ class SonataGroupTest extends TestCase {
      */
     public function testGetRoles() {
         // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-                'This test has not been implemented yet.'
-        );
+        $this->markTestIncomplete('This test has not been implemented yet.');
     }
 
     /**
@@ -136,9 +127,7 @@ class SonataGroupTest extends TestCase {
      */
     public function testSetName() {
         // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-                'This test has not been implemented yet.'
-        );
+        $this->markTestIncomplete('This test has not been implemented yet.');
     }
 
     /**
@@ -147,9 +136,7 @@ class SonataGroupTest extends TestCase {
      */
     public function testSetRoles() {
         // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-                'This test has not been implemented yet.'
-        );
+        $this->markTestIncomplete('This test has not been implemented yet.');
     }
 
     /**
@@ -157,9 +144,8 @@ class SonataGroupTest extends TestCase {
      * @todo   Implement testAddUser().
      */
     public function testAddUser() {
-        $this->markTestSkipped(
-                'need call to addGroup'
-        );
+        $this->markTestIncomplete('This test has not been implemented yet.');
+
         $toto = 'weekend';
         $user = $this->getMockForAbstractClass(AdvancedUserInterface::class);
 
@@ -173,13 +159,11 @@ class SonataGroupTest extends TestCase {
      * @todo   Implement testRemoveUser().
      */
     public function testRemoveUser() {
-        $this->markTestSkipped(
-                'need call to removeGroup'
-        );
+        $this->markTestIncomplete('This test has not been implemented yet.');
 
         $toto = 'lundi matin';
         $user = $this
-                ->getMockForAbstractClass(AdvancedUserInterface::class);
+            ->getMockForAbstractClass(AdvancedUserInterface::class);
         $this->object->addUser($user);
         $get = $this->object->getUsers();
 
@@ -195,9 +179,7 @@ class SonataGroupTest extends TestCase {
      */
     public function testGetUsers() {
         // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-                'This test has not been implemented yet.'
-        );
+        $this->markTestIncomplete('This test has not been implemented yet.');
     }
 
     /**
@@ -206,9 +188,7 @@ class SonataGroupTest extends TestCase {
      */
     public function testSetUsers() {
         // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-                'This test has not been implemented yet.'
-        );
+        $this->markTestIncomplete('This test has not been implemented yet.');
     }
 
     /**
@@ -217,9 +197,7 @@ class SonataGroupTest extends TestCase {
      */
     public function testSetId() {
         // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-                'This test has not been implemented yet.'
-        );
+        $this->markTestIncomplete('This test has not been implemented yet.');
     }
 
     /**
@@ -228,9 +206,7 @@ class SonataGroupTest extends TestCase {
      */
     public function testIsNew() {
         // Remove the following lines when you implement this test.
-        $this->markTestIncomplete(
-                'This test has not been implemented yet.'
-        );
+        $this->markTestIncomplete('This test has not been implemented yet.');
     }
 
-}
+    }

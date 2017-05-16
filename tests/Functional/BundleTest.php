@@ -5,7 +5,8 @@ namespace Librinfo\SonataSyliusUserBundle\Tests\Functional;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 use Symfony\Component\DependencyInjection\Container;
 
-class BundleTest extends KernelTestCase {
+class BundleTest extends KernelTestCase
+    {
 
     protected $container;
 
@@ -18,9 +19,7 @@ class BundleTest extends KernelTestCase {
 
     public function testServicesAreInitializable() {
 
-        $this->markTestSkipped(
-                'test class'
-        );
+        $this->markTestIncomplete('This test has not been implemented yet.');
 
         $serviceIds = array_filter($this->container->getServiceIds(), function ($serviceId) {
             return 0 === strpos($serviceId, "sonata_sylius_user" . '.');
@@ -31,4 +30,4 @@ class BundleTest extends KernelTestCase {
         }
     }
 
-}
+    }

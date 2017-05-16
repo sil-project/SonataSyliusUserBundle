@@ -8,7 +8,8 @@ use Librinfo\SonataSyliusUserBundle\Command\CreateUserCommand;
  */
 use PHPUnit\Framework\TestCase;
 
-class CreateUserCommandTest extends TestCase {
+class CreateUserCommandTest extends TestCase
+    {
 
     /**
      * @var CreateUserCommand
@@ -28,7 +29,8 @@ class CreateUserCommandTest extends TestCase {
      * Tears down the fixture, for example, closes a network connection.
      * This method is called after a test is executed.
      */
-    protected function tearDown() {       
+    protected function tearDown() {
+        
     }
 
     /**
@@ -36,9 +38,8 @@ class CreateUserCommandTest extends TestCase {
      * @todo   Implement testConfigure().
      */
     public function testConfigure() {
-        $this->markTestSkipped(
-                'need call to configure'
-        );
+        $this->markTestIncomplete('This test has not been implemented yet.');
+
         $this->myCommand->configure();
 
         $this->myConfig = $this->myCommand->getName();
@@ -55,4 +56,4 @@ class CreateUserCommandTest extends TestCase {
          */
     }
 
-}
+    }
