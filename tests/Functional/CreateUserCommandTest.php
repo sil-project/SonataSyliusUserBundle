@@ -43,7 +43,7 @@ class CreateUserCommandTest extends TestCase {
     public function testConfigure() {
         
         $this->markTestSkipped(
-        'need call to addGroup'
+        'need call to configure'
         );
         
         $this->myCommand->configure();
