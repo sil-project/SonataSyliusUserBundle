@@ -20,14 +20,17 @@
      <testsuite name="Functional">
        <directory>./tests/Functional</directory>
      </testsuite>
+     <testsuite name="Web">
+       <directory>./tests/Web</directory>
+     </testsuite>
   </testsuites>
   
   
   <filter>
     <whitelist>
-      <directory>./src</directory>
+      <directory>./</directory>
       <exclude>
-        <directory>./Tests/</directory>
+        <directory>./tests/</directory>
         <directory>./DataFixtures/</directory>
         <directory>./Resources/</directory>
         <directory>./vendor/</directory>
@@ -37,7 +40,7 @@
   </filter>
   
   <php>
-    <server name="KERNEL_DIR" value="tests/Resources/app/" />
+    <server name="KERNEL_DIR" value="tests/Resources/App/" />
       <server name="IS_DOCTRINE_ORM_SUPPORTED" value="true" />
   </php>
   
