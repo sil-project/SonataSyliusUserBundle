@@ -17,9 +17,9 @@ class BundleTest extends KernelTestCase {
     }
 
     public function testServicesAreInitializable() {
-        
+
         $this->markTestSkipped(
-        'test class'
+                'test class'
         );
 
         $serviceIds = array_filter($this->container->getServiceIds(), function ($serviceId) {
@@ -30,4 +30,5 @@ class BundleTest extends KernelTestCase {
             $this->assertNotNull($this->container->get($serviceId));
         }
     }
+
 }

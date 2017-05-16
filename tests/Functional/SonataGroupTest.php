@@ -57,9 +57,9 @@ class SonataGroupTest extends TestCase {
         $role = 'foo';
 
         $this->object->addRole($role);
-        //var_dump($role);
+
         $listRoles = $this->object->getRoles();
-        //var_dump($listRoles);
+
         // we search 'foo' in uppercase because addRoles transform a string in uppercase
         $this->assertContains('FOO', $listRoles);
     }
@@ -120,15 +120,12 @@ class SonataGroupTest extends TestCase {
         $this->object->addRole($role);
         $this->object->addRole($role2);
         $this->object->addRole($role3);
-        //var_dump($role);
-
 
         $listRoles = $this->object->getRoles();
-        //var_dump($listRoles);
+
         $this->object->removeRole($role2);
         //we call again getRoles() for refresh the array
         $listRoles = $this->object->getRoles();
-        //var_dump($listRoles);
 
         $this->assertNotContains('bar', $listRoles);
     }
@@ -165,12 +162,9 @@ class SonataGroupTest extends TestCase {
         );
         $toto = 'weekend';
         $user = $this->getMockForAbstractClass(AdvancedUserInterface::class);
-        //var_dump($toto);
-        //$this->object->addUser($user);
-        //$get = $this->object->getUsers();
-        //it's the same thing 
+
         $get = $this->object->addUser($user)->getUsers();
-        //var_dump($get);
+
         $this->assertNotNull($get);
     }
 
@@ -186,14 +180,11 @@ class SonataGroupTest extends TestCase {
         $toto = 'lundi matin';
         $user = $this
                 ->getMockForAbstractClass(AdvancedUserInterface::class);
-        //var_dump($toto);
-
         $this->object->addUser($user);
         $get = $this->object->getUsers();
-        //var_dump($get);
+
         $get = $this->object->removeUser($user);
         $get = $this->object->getUsers();
-        //var_dump($get);
 
         $this->assertEquals(0, $get->count());
     }
