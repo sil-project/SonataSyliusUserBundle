@@ -6,7 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 use Symfony\Component\DependencyInjection\Container;
 
 class BundleTest extends KernelTestCase
-    {
+{
 
     protected $container;
 

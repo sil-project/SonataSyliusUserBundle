@@ -10,7 +10,7 @@ use Symfony\Component\Security\Core\User\AdvancedUserInterface;
 use PHPUnit\Framework\TestCase;
 
 class SonataGroupTest extends TestCase
-    {
+{
 
     /**
      * @var SonataGroup
