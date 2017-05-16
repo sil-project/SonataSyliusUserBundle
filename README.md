@@ -1,3 +1,13 @@
+# Sonata Sylius User Bundle
+
+[![Travis](https://img.shields.io/travis/libre-informatique/SonataSyliusUserBundle.svg?style=flat-square)][travis]
+[![Coveralls](https://img.shields.io/coveralls/libre-informatique/SonataSyliusUserBundle.svg?style=flat-square)][coveralls]
+[![License](https://img.shields.io/github/license/libre-informatique/SonataSyliusUserBundle.svg?style=flat-square)][license]
+
+[![Latest Stable Version](https://poser.pugx.org/libre-informatique/sonata-sylius-user-bundle/v/stable)](https://packagist.org/packages/libre-informatique/sonata-sylius-user-bundle)
+[![Latest Unstable Version](https://poser.pugx.org/libre-informatique/sonata-sylius-user-bundle/v/unstable)](https://packagist.org/packages/libre-informatique/sonata-sylius-user-bundle)
+[![Total Downloads](https://poser.pugx.org/libre-informatique/sonata-sylius-user-bundle/downloads)](https://packagist.org/packages/libre-informatique/sonata-sylius-user-bundle)
+
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:0 orderedList:0 -->
 
 - [Sonata Sylius User Bundle](#sonata-sylius-user-bundle)
@@ -10,7 +20,6 @@
 
 <!-- /TOC -->
 
-# Sonata Sylius User Bundle
 
 This is a Symfony bundle providing a bridge between [SonataAdmin](https://github.com/sonata-project/SonataAdminBundle)
  and [SyliusUser](http://docs.sylius.org/en/latest/bundles/SyliusUserBundle/index.html)
@@ -177,3 +186,8 @@ imports:
 ```
 
 If you want to use your own configuration for SyliusUserBundle (classes, repositoties, templates, etc), then you will have to adapt this config.yml to your needs instead of importing it.
+
+
+[travis]: https://travis-ci.org/libre-informatique/SonataSyliusUserBundle
+[coveralls]: https://coveralls.io/github/libre-informatique/SonataSyliusUserBundle?branch=master
+[license]: ./LICENCE.md

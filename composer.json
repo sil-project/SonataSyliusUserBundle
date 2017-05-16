@@ -4,10 +4,13 @@
     "description": "Symfony bundle providing a bridge between SonataAdmin and SyliusUser (an alternative to SonataUserBundle)",
     "minimum-stability": "dev",
     "require": {
-        "php": "^5.6|^7.0",
+        "php": ">=5.6",
         "symfony/symfony": "3.2.*",
-        "sylius/user-bundle": "^1.0",
-        "blast-project/base-entities-bundle": "dev-master",
+        "sylius/user-bundle": "1.0.x-dev",
+        "blast-project/base-entities-bundle": "^0.4"
+    },
+    "require-dev": {
+	"symfony/phpunit-bridge": "3.2.*",
         "symfony/monolog-bundle": "^3.1",
         "symfony/swiftmailer-bundle": "^2.5",
         "sensio/framework-extra-bundle": "^3.0.2",
@@ -19,7 +22,15 @@
         "doctrine/doctrine-cache-bundle": "^1.2",
         "doctrine/orm": "^2.5"
     },
-    "license": "GPL-3.0",
+    "config": {
+        "sllh-composer-lint": {
+            "php": true,
+            "type": true,
+            "minimum-stability": false,
+            "version-constraints": true
+        }
+    },
+    "license": "LGPL-3.0",
     "keywords": [
         "symfony",
         "sonata admin",
@@ -36,6 +47,11 @@
             "homepage": "http://www.libre-informatique.fr/"
         }
     ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.4.x-dev"
+        }
+    },
     "autoload": {
         "psr-4": {
             "Librinfo\\SonataSyliusUserBundle\\": "src/",
