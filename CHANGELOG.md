@@ -1,6 +1,14 @@
 # Change Log
 
-## [0.4.2](https://github.com/libre-informatique/SonataSyliusUserBundle/tree/0.4.2) (2017-05-04)
+## [Unreleased](https://github.com/libre-informatique/SonataSyliusUserBundle/tree/HEAD)
+
+[Full Changelog](https://github.com/libre-informatique/SonataSyliusUserBundle/compare/0.4.2...HEAD)
+
+**Merged pull requests:**
+
+- Add units tests [\#3](https://github.com/libre-informatique/SonataSyliusUserBundle/pull/3) ([haseo29](https://github.com/haseo29))
+
+## [0.4.2](https://github.com/libre-informatique/SonataSyliusUserBundle/tree/0.4.2) (2017-05-05)
 **Merged pull requests:**
 
 - DevKit updates for SonataSyliusUserBundle [\#2](https://github.com/libre-informatique/SonataSyliusUserBundle/pull/2) ([BlastCI](https://github.com/BlastCI))
