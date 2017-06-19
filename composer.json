@@ -2,11 +2,17 @@
     "name": "libre-informatique/sonata-sylius-user-bundle",
     "type": "symfony-bundle",
     "description": "Symfony bundle providing a bridge between SonataAdmin and SyliusUser (an alternative to SonataUserBundle)",
-    "minimum-stability": "dev",
     "require": {
         "php": ">=5.6",
         "symfony/symfony": ">=3.2",
-        "sylius/user-bundle": "1.0.x-dev",
+        "sylius/registry": "1.0.x-dev",
+        "sylius/mailer": "1.0.x-dev",
+        "sylius/mailer-bundle": "1.0.x-dev",
+        "sylius/resource": "1.0.x-dev",
+        "sylius/resource-bundle": "1.0.x-dev",
+        "sylius/user": "1.0.x-dev",
+        "sylius/user-bundle": "1.0.x-dev",        
+        "blast-project/core-bundle": "dev-wip-lisem",
         "blast-project/base-entities-bundle": "dev-wip-lisem"
     },
     "require-dev": {
