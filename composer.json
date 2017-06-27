@@ -12,8 +12,8 @@
         "sylius/resource-bundle": "1.0.x-dev",
         "sylius/user": "1.0.x-dev",
         "sylius/user-bundle": "1.0.x-dev",        
-        "blast-project/core-bundle": "dev-wip-lisem",
-        "blast-project/base-entities-bundle": "dev-wip-lisem"
+        "blast-project/core-bundle": ">=0.4",
+        "blast-project/base-entities-bundle": ">=0.4"
     },
     "require-dev": {
 	"symfony/phpunit-bridge": ">=3.2"
