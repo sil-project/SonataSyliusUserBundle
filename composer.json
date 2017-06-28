@@ -51,8 +51,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Librinfo\\SonataSyliusUserBundle\\": "src/",
-            "Librinfo\\SonataSyliusUserBundle\\Tests\\": "tests/"
+            "Librinfo\\SonataSyliusUserBundle\\": "src/"
         }
     }
 }
