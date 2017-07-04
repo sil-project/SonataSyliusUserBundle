@@ -1,11 +1,12 @@
 <?php
 
 /*
- * Copyright (C) Paweł Jędrzejewski
+ * This file is part of the Blast Project package.
+ *
  * Copyright (C) 2015-2017 Libre Informatique
  *
- * This file is licenced under the GNU GPL v3.
- * For the full copyright and license information, please view the LICENSE
+ * This file is licenced under the GNU LGPL v3.
+ * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
  */
 
@@ -55,16 +56,19 @@ class SonataUser extends User implements SonataUserInterface
     public function __toString()
     {
         $names = [];
-        if ($this->getFirstName())
+        if ($this->getFirstName()) {
             $names[] = $this->getFirstName();
-        if ($this->getLastName())
+        }
+        if ($this->getLastName()) {
             $names[] = $this->getLastName();
-        if ($names)
+        }
+        if ($names) {
             return implode(' ', $names);
-        elseif ($this->getUsername())
+        } elseif ($this->getUsername()) {
             return (string) $this->getUsername();
-        else
+        } else {
             return (string) $this->getEmail();
+        }
     }
 
     /**
@@ -116,7 +120,7 @@ class SonataUser extends User implements SonataUserInterface
     }
 
     /**
-     * Returns the user roles (including the roles provided by its groups)
+     * Returns the user roles (including the roles provided by its groups).
      *
      * @return array The roles
      */
@@ -144,13 +148,12 @@ class SonataUser extends User implements SonataUserInterface
      *
      * @param string $role
      *
-     * @return boolean
+     * @return bool
      */
     public function hasRole($role)
     {
         return in_array(strtoupper($role), $this->getRoles(), true);
     }
-
 
     /**
      * Gets the groups granted to the user.
@@ -176,7 +179,7 @@ class SonataUser extends User implements SonataUserInterface
     }
 
     /**
-     * @return boolean
+     * @return bool
      */
     public function hasGroup($name)
     {
@@ -185,6 +188,7 @@ class SonataUser extends User implements SonataUserInterface
 
     /**
      * @param SonataGroupInterface $group
+     *
      * @return self
      */
     public function addGroup(SonataGroupInterface $group)
@@ -198,6 +202,7 @@ class SonataUser extends User implements SonataUserInterface
 
     /**
      * @param SonataGroupInterface $group
+     *
      * @return self
      */
     public function removeGroup(SonataGroupInterface $group)

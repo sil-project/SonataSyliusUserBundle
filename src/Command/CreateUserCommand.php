@@ -1,10 +1,12 @@
 <?php
 
 /*
+ * This file is part of the Blast Project package.
+ *
  * Copyright (C) 2015-2017 Libre Informatique
  *
- * This file is licenced under the GNU GPL v3.
- * For the full copyright and license information, please view the LICENSE
+ * This file is licenced under the GNU LGPL v3.
+ * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
  */
 
@@ -14,11 +16,12 @@ use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Question\Question;
-use Symfony\Component\Validator\Constraints\Email;  // TODO...
-use Symfony\Component\Validator\Constraints\NotBlank; // TODO...
+// TODO...
+// TODO...
 
 /**
  * @author Marcos Bezerra de Menezes <marcos.bezerra@libre-informatique.fr>
+ *
  * @todo   Add validation
  */
 class CreateUserCommand extends ContainerAwareCommand
@@ -84,22 +87,22 @@ EOT
         $output->writeln('Administrator account successfully registered.');
     }
 
-
     /**
-     * @param InputInterface $input
+     * @param InputInterface  $input
      * @param OutputInterface $output
-     * @param string $question
+     * @param string          $question
      *
      * @return mixed
      */
     protected function ask(InputInterface $input, OutputInterface $output, $question)
     {
         $helper = $this->getHelperSet()->get('question');
+
         return $helper->ask($input, $output, new Question($question));
     }
 
     /**
-     * @param InputInterface $input
+     * @param InputInterface  $input
      * @param OutputInterface $output
      *
      * @return mixed
