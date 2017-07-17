@@ -81,7 +81,7 @@ class TraceableListener implements LoggerAwareInterface, EventSubscriber
         }
 
         $this->logger->debug('[TraceableListener] Entering TraceableListener for « loadClassMetadata » event');
-        $this->logger->debug('[TraceableListener] Using « '.$this->userClass.' » as User class');
+        $this->logger->debug('[TraceableListener] Using « ' . $this->userClass . ' » as User class');
 
         // setting default mapping configuration for Traceable
 
