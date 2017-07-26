@@ -1,5 +1,18 @@
 # Change Log
 
+## [0.4.5](https://github.com/libre-informatique/SonataSyliusUserBundle/tree/0.4.5) (2017-07-26)
+[Full Changelog](https://github.com/libre-informatique/SonataSyliusUserBundle/compare/0.4.4...0.4.5)
+
+**Merged pull requests:**
+
+- DevKit updates for SonataSyliusUserBundle [\#17](https://github.com/libre-informatique/SonataSyliusUserBundle/pull/17) ([BlastCI](https://github.com/BlastCI))
+- Lisem fix & features [\#15](https://github.com/libre-informatique/SonataSyliusUserBundle/pull/15) ([FanchTheSystem](https://github.com/FanchTheSystem))
+- DevKit updates for SonataSyliusUserBundle [\#14](https://github.com/libre-informatique/SonataSyliusUserBundle/pull/14) ([BlastCI](https://github.com/BlastCI))
+- DevKit updates for SonataSyliusUserBundle [\#13](https://github.com/libre-informatique/SonataSyliusUserBundle/pull/13) ([BlastCI](https://github.com/BlastCI))
+- Wip lisem [\#12](https://github.com/libre-informatique/SonataSyliusUserBundle/pull/12) ([FanchTheSystem](https://github.com/FanchTheSystem))
+- DevKit updates for SonataSyliusUserBundle [\#11](https://github.com/libre-informatique/SonataSyliusUserBundle/pull/11) ([BlastCI](https://github.com/BlastCI))
+- DevKit updates for SonataSyliusUserBundle [\#10](https://github.com/libre-informatique/SonataSyliusUserBundle/pull/10) ([BlastCI](https://github.com/BlastCI))
+
 ## [0.4.4](https://github.com/libre-informatique/SonataSyliusUserBundle/tree/0.4.4) (2017-06-27)
 [Full Changelog](https://github.com/libre-informatique/SonataSyliusUserBundle/compare/0.4.3...0.4.4)
 
