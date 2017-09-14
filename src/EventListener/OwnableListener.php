@@ -78,12 +78,12 @@ class OwnableListener implements LoggerAwareInterface, EventSubscriber
         // owner mapping
         $metadata->mapManyToOne([
             'targetEntity' => $this->userClass,
-            'fieldName' => 'owner',
-            'joinColumn' => [
-                'name' => 'owner_id',
+            'fieldName'    => 'owner',
+            'joinColumn'   => [
+                'name'                 => 'owner_id',
                 'referencedColumnName' => 'id',
-                'onDelete' => 'SET NULL',
-                'nullable' => true,
+                'onDelete'             => 'SET NULL',
+                'nullable'             => true,
             ],
         ]);
 
