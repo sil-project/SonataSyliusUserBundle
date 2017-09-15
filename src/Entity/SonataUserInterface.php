@@ -26,22 +26,22 @@ interface SonataUserInterface extends BaseUserInterface
     /**
      * @return string
      */
-    public function getFirstName();
+    public function getFirstName(): ?string;
 
     /**
      * @param string $firstName
      */
-    public function setFirstName($firstName);
+    public function setFirstName(?string $firstName): void;
 
     /**
      * @return string
      */
-    public function getLastName();
+    public function getLastName(): ?string;
 
     /**
      * @param string $lastName
      */
-    public function setLastName($lastName);
+    public function setLastName(?string $lastName): void;
 
     /**
      * @return string

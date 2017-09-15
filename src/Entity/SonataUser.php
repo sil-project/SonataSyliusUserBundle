@@ -53,7 +53,7 @@ class SonataUser extends User implements SonataUserInterface
     /**
      * @return string
      */
-    public function __toString()
+    public function __toString(): string
     {
         $names = [];
         if ($this->getFirstName()) {
@@ -74,7 +74,7 @@ class SonataUser extends User implements SonataUserInterface
     /**
      * {@inheritdoc}
      */
-    public function getFirstName()
+    public function getFirstName(): ?string
     {
         return $this->firstName;
     }
@@ -82,7 +82,7 @@ class SonataUser extends User implements SonataUserInterface
     /**
      * {@inheritdoc}
      */
-    public function setFirstName($firstName)
+    public function setFirstName(?string $firstName): void
     {
         $this->firstName = $firstName;
     }
@@ -90,7 +90,7 @@ class SonataUser extends User implements SonataUserInterface
     /**
      * {@inheritdoc}
      */
-    public function getLastName()
+    public function getLastName(): ?string
     {
         return $this->lastName;
     }
@@ -98,7 +98,7 @@ class SonataUser extends User implements SonataUserInterface
     /**
      * {@inheritdoc}
      */
-    public function setLastName($lastName)
+    public function setLastName(?string $lastName): void
     {
         $this->lastName = $lastName;
     }
@@ -150,7 +150,7 @@ class SonataUser extends User implements SonataUserInterface
      *
      * @return bool
      */
-    public function hasRole($role)
+    public function hasRole(string $role): bool
     {
         return in_array(strtoupper($role), $this->getRoles(), true);
     }

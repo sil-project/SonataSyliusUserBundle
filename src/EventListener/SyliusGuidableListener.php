@@ -78,6 +78,11 @@ class SyliusGuidableListener implements LoggerAwareInterface, EventSubscriber
             return;
         }
 
+        // Don't apply twice the uuid mapping
+        if ($metadata->idGenerator instanceof UuidGenerator) {
+            return;
+        }
+
         $this->logger->debug('[SyliusGuidableListener] Entering SyliusGuidableListener for « loadClassMetadata » event');
 
         // we CANNOT change field type (from int to guid) with $metadata->setAttributeOverride(...)
@@ -86,9 +91,9 @@ class SyliusGuidableListener implements LoggerAwareInterface, EventSubscriber
         unset($metadata->fieldNames['id']);
         unset($metadata->columnNames['id']);
         $metadata->mapField([
-            'id' => true,
-            'fieldName' => 'id',
-            'type' => 'guid',
+            'id'         => true,
+            'fieldName'  => 'id',
+            'type'       => 'guid',
             'columnName' => 'id',
         ]);
         $metadata->setIdGeneratorType(\Doctrine\ORM\Mapping\ClassMetadataInfo::GENERATOR_TYPE_UUID);

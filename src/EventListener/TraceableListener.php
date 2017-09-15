@@ -88,24 +88,24 @@ class TraceableListener implements LoggerAwareInterface, EventSubscriber
         // createdBy
         $metadata->mapManyToOne([
             'targetEntity' => $this->userClass,
-            'fieldName' => 'createdBy',
-            'joinColumn' => [
-                'name' => 'createdBy_id',
+            'fieldName'    => 'createdBy',
+            'joinColumn'   => [
+                'name'                 => 'createdBy_id',
                 'referencedColumnName' => 'id',
-                'onDelete' => 'SET NULL',
-                'nullable' => true,
+                'onDelete'             => 'SET NULL',
+                'nullable'             => true,
             ],
         ]);
 
         // updatedBy
         $metadata->mapManyToOne([
             'targetEntity' => $this->userClass,
-            'fieldName' => 'updatedBy',
-            'joinColumn' => [
-                'name' => 'updatedBy_id',
+            'fieldName'    => 'updatedBy',
+            'joinColumn'   => [
+                'name'                 => 'updatedBy_id',
                 'referencedColumnName' => 'id',
-                'onDelete' => 'SET NULL',
-                'nullable' => true,
+                'onDelete'             => 'SET NULL',
+                'nullable'             => true,
             ],
         ]);
 
