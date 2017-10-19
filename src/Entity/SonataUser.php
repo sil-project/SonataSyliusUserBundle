@@ -124,7 +124,7 @@ class SonataUser extends User implements SonataUserInterface
      *
      * @return array The roles
      */
-    public function getRoles()
+    public function getRoles(): array
     {
         $roles = $this->roles;
 
@@ -168,7 +168,7 @@ class SonataUser extends User implements SonataUserInterface
     /**
      * @return array
      */
-    public function getGroupNames()
+    public function getGroupNames(): array
     {
         $names = array();
         foreach ($this->getGroups() as $group) {
