@@ -2,45 +2,91 @@ parameters:
     blast:
         Librinfo\SonataSyliusUserBundle\Entity\SonataUser:
             Sonata\AdminBundle\Datagrid\ListMapper:
-                remove:
-                    id: ~
-                    salt: ~
-                    confirmationToken: ~
-                    passwordRequestedAt: ~
-                    credentialsExpired: ~
-                    credentialsExpireAt: ~
-                    expiresAt: ~
                 add:
-                    name: ~
-                    firstname: ~
                     username: ~
+                    email: ~
+                    firstName: ~
+                    lastName: ~
+                    lastLogin: ~
+                    locked: ~
+                    expiresAt: ~
+                    roles:
+                        type: array
+                        template: BlastCoreBundle:CRUD:list_array_roles.html.twig
                     _options:
-                        fieldsOrder: [username, name, firstname]
+                        fieldsOrder:
+                            - username
+                            - email
+                            - firstName
+                            - lastName
+                            - lastLogin
+                            - locked
+                            - expiresAt
+                            - roles
             Sonata\AdminBundle\Datagrid\DatagridMapper:
-                _copy: Sonata\AdminBundle\Datagrid\ListMapper
+                add:
+                    username: ~
+                    email: ~
+                    firstName: ~
+                    lastName: ~
+                    lastLogin: ~
+                    locked: ~
+                    expiresAt: ~
+                    roles: ~
+                    _options:
+                        fieldsOrder:
+                            - username
+                            - email
+                            - firstName
+                            - lastName
+                            - lastLogin
+                            - locked
+                            - expiresAt
+                            - roles
             Sonata\AdminBundle\Form\FormMapper:
                 add:
-                    form_group_general:
-                        '':
+                    form_tab_general:
+                        form_group_general:
                             username: ~
-                            name: ~
-                            firstname: ~
+                            firstName: ~
+                            lastName: ~
                             email: ~
                         form_group_details:
                             enabled: ~
                             locked: ~
-                            expired: ~
+                            expired:
+                                type: checkbox
                             expiresAt:
                                 type: sonata_type_date_picker
-                    form_group_security:
                         form_group_password:
                             plainPassword:
                                 type: repeated
                                 required: false
+                                first_options:
+                                    label: librinfo.sonatasyliususerbundle.first_password
+                                second_options:
+                                    label: librinfo.sonatasyliususerbundle.second_password
                         form_group_roles:
                             roles: ~
             Sonata\AdminBundle\Show\ShowMapper:
-                _copy: Sonata\AdminBundle\Form\FormMapper
+                add:
+                    form_tab_general:
+                        form_group_general:
+                            username: ~
+                            firstName: ~
+                            lastName: ~
+                            email: ~
+                        form_group_details:
+                            enabled: ~
+                            locked: ~
+                            expired:
+                                type: checkbox
+                            expiresAt:
+                                type: sonata_type_date_picker
+                        form_group_roles:
+                            roles:
+                                type: array
+                                template: BlastCoreBundle:CRUD:show_array_roles.html.twig
 
         Librinfo\SonataSyliusBundle\Entity\SonataGroup:
             Sonata\AdminBundle\Datagrid\ListMapper:
