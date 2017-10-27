@@ -41,5 +41,6 @@
         "psr-4": {
             "Librinfo\\SonataSyliusUserBundle\\": "src/"
         }
-    }
+    },
+    "version": "dev-wip-lisem"
 }
