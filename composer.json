@@ -10,15 +10,8 @@
         "blast-project/base-entities-bundle": "self.version"
     },
     "require-dev": {
-	"symfony/phpunit-bridge": ">=3.2"
-    },
-    "config": {
-        "sllh-composer-lint": {
-            "php": true,
-            "type": true,
-            "minimum-stability": true,
-            "version-constraints": true
-        }
+	"symfony/phpunit-bridge": ">=3.2",
+        "phpunit/phpunit": "^6.4"
     },
     "license": "LGPL-3.0",
     "keywords": [
@@ -41,5 +34,6 @@
         "psr-4": {
             "Librinfo\\SonataSyliusUserBundle\\": "src/"
         }
-    }
+    },
+    "version": "dev-wip-lisem"
 }

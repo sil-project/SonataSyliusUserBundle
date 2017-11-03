@@ -213,4 +213,20 @@ class SonataUser extends User implements SonataUserInterface
 
         return $this;
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function isLocked(): bool
+    {
+        return (bool) $this->locked;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function isExpired(): bool
+    {
+        return (bool) ($this->expiresAt !== null ? $this->expiresAt < new \DateTime() : false);
+    }
 }

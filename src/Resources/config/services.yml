@@ -8,6 +8,9 @@ parameters:
     sonata_sylius_user.user.class: Librinfo\SonataSyliusUserBundle\Entity\SonataUser
 
 services:
+    blast_core.label.strategy.librinfo_sonata_sylius_user:
+        class: Blast\CoreBundle\Translator\LibrinfoLabelTranslatorStrategy
+        arguments: ['Librinfo\SonataSyliusUserBundle']
 
 ### DOCTRINE EVENT LISTENERS ###
 
