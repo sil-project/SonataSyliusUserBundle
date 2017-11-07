@@ -10,10 +10,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Librinfo\SonataSyliusUserBundle;
+namespace Sil\Bundle\SonataSyliusUserBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class SonataSyliusUserBundle extends Bundle
+class SilSonataSyliusUserBundle extends Bundle
 {
 }
